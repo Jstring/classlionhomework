@@ -6,7 +6,7 @@ class HomeController < ApplicationController
   def index
   end
   def photo
-    
+    #hi
     data = '/usr/share/opencv/haarcascades/haarcascade_frontalface_alt.xml'
     detector = CvHaarClassifierCascade::load(data)
     image = CvMat.load(params[:photo_file].path)
